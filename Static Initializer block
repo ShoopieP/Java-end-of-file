@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s = new Scanner(System.in); //to get both values
+        
+        int b = s.nextInt(); //scans first line to get value B
+        int h = s.nextInt(); //scans next line to get value H
+        
+        if (b<=0 || h<=0) {  //check if <= 0)
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+        else{  (gets area with values given and prints)
+            int area = b * h;
+            System.out.println(area);
+        }
+    }
+}
+//If both values are greater than zero, then the main method must output the area of the parallelogram. Otherwise, print "java.lang.Exception: Breadth and height must be positive" without quotes.
+//static initialization block ex
+//    public static int capacity = 10;
+//literally anything with static in the function
+//problem
+
+//You are given a class Solution with a main method. Complete the given code so that it outputs the area of a parallelogram with breadth  and height . You should read the variables from the standard input.
+//If B<=0 or H<=0 , the output should be "java.lang.Exception: Breadth and height must be positive" without quotes.
+
+//solution
+
+//1. loop to check if both value for B and H are greater than 0, if not print
+//"java.lang.Exception: Breadth and height must be positive"
+
+//once check passes do base x height for parraleloram area
