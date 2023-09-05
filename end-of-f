@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+//For each line, print the line number, followed by a single space, and then the line content received as input.
+
+public class Solution {
+
+public static void main(String[] args) {
+
+    Scanner s =new Scanner(System.in); //scanner s takes keyboard input bc of (System.in)
+
+
+    int count =1;   //starts at 1 so the line number printed starts at 1
+    while(s.hasNextLine() ) {
+    {
+        String f =s.nextLine(); turns the input to String
+        System.out.println(count +" "+ f); //prints both line count and line
+        count++; //increments count to increment the line number output
+
+    }
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    //the problem to be solved is that the line needs to be read, and then printed with the line number(not a variable, a constant) until there is no more input ot be read.
+    //this is broken down with the while loop first, to scan for a newLine until nothing is there
+    //then the scanned line is put into a string
+    //the line count, a space, and then the string is then printed.
+    //count increments and the string is printed until the last line is read.
+    }
+}
